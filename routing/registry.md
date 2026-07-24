@@ -109,6 +109,7 @@ ArchitectureReview:
   trigger:
     new_agent: true
     ownership_change: true
+    existing_agent_redefinition: true
     high_risk: true
     sst_violation_risk: true
     execution_drift: true
@@ -162,3 +163,51 @@ OpportunityDiscovery:
   fallback:
     - Claude
   skill: skills/opportunity-discovery.md
+
+---
+
+CapabilityDesign:
+  trigger:
+    build: true
+    note: >
+      Capability Map показывает пустой узел, связанный со стратегической
+      целью, либо запрос независимо повторился (см. CLAUDE.md → Роль AO).
+  preferred:
+    - Claude
+  fallback:
+    - Claude
+
+---
+
+CapabilityEvolution:
+  trigger:
+    evolve: true
+    note: >
+      Событие — новый источник/модель/инструмент, накопленный опыт
+      использования агента; не календарь. Включает периодическую проверку
+      определения самого AO после каждого реального цикла Build/Evolve
+      (см. CLAUDE.md → Capability Registry → Capability Evolution).
+  preferred:
+    - Claude
+  fallback:
+    - Claude
+
+---
+
+ExternalSystemsAssimilation:
+  trigger:
+    external_system_brought: true
+  preferred:
+    - Claude
+  fallback:
+    - Claude
+
+---
+
+OutcomeAccountability:
+  trigger:
+    artifact_completion_with_claimed_external_result: true
+  preferred:
+    - Claude
+  fallback:
+    - Claude
