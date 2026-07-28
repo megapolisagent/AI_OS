@@ -1,6 +1,10 @@
 ---
+aliases:
+  - Маркетолог
 Версия: 1.4
 Дата: 2026-07-27
+Проект: "[[../projects/registry.md]] (PRJ-007 — Мегаполис)"
+Skills: нет (Фаза 2 не начата — ни одного оформленного Skill-файла)
 Тип: Agent Specification
 Подтип: Business Agent — первый коммерческий агент AI_OS. Спецификация
         разделена на Платформу (переносимо между бизнесами) и Конфигурацию
@@ -12,9 +16,9 @@
         оформленного Skill-файла, нет формата полей внутри Business Assets,
         нет первого реального бизнес-кейса. Architecture Review остаётся
         гейтом перед первым реальным использованием, не блокирует Фазу 2.
-Связанные файлы: [[../decisions/system/2026-07-26_marketer-capability-map-final.md]] |
+Связанные файлы: "[[../decisions/system/2026-07-26_marketer-capability-map-final.md]] |
         [[../decisions/system/2026-07-26_marketer-agent-design.md]] |
-        [[../decisions/system/2026-07-26_saas-architecture-patterns-research.md]]
+        [[../decisions/system/2026-07-26_saas-architecture-patterns-research.md]]"
 ---
 
 # MARKETING STRATEGY AGENT

@@ -56,12 +56,13 @@ Evidence Board
 
 **4. Taste Capture — лестница обобщения**
 
+Первые три ступени — те же, что «Лестница обобщения» в CLAUDE.md (Raw
+Observation → Hypothesis → Recurring Pattern), без изменений, не повторяются
+здесь текстом (см. CLAUDE.md → Эпистемические маркеры). Специфика этого
+skill — четвёртая ступень:
+
 ```
-Raw Observation   — дословная формулировка, без интерпретации
-        ↓
-Hypothesis        — единичное предположение по одному наблюдению
-        ↓
-Recurring Pattern — то же самое повторилось независимо в ≥2–3 наблюдениях
+Recurring Pattern
         ↓
 Creative Territory — синтез поверх устойчивых паттернов
 ```

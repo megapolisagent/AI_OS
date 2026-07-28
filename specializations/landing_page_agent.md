@@ -1,10 +1,14 @@
 ---
+aliases:
+  - Агент лендингов
 Версия: 1.0
 Дата: 2026-07-24
+Проект: "[[../projects/registry.md]] (PRJ-007 — Мегаполис и связанные инициативы, не эксклюзивно)"
+Skills: "[[../skills/conversion-method/SKILL.md]]"
 Тип: Agent Specification
 Подтип: Business Agent
 Статус: Черновик — ожидает Independent Validation (Architecture Review) перед первым реальным использованием
-Связанные файлы: [[../skills/conversion-method/SKILL.md]] | [[../context/user_maria.md]]
+Связанные файлы: "[[../skills/conversion-method/SKILL.md]] | [[../context/user_maria.md]]"
 ---
 
 # LANDING_PAGE_AGENT

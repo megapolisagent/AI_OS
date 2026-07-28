@@ -113,10 +113,16 @@ ArchitectureReview:
     high_risk: true
     sst_violation_risk: true
     execution_drift: true
+    principle_change: true
+    taxonomy_change: true
+    routing_semantics_change: true   # условия/триггеры capability, не выбор executor
   preferred:
     - Codex
   fallback:
-    - Claude
+    - Claude   # обязан исполняться как independent reasoning trace: изолированный
+               # вызов, получающий только проверяемый вывод + нужные артефакты,
+               # не унаследованный ход рассуждений/предпосылки автора находки —
+               # продолжение того же диалога не засчитывается как проверка
 
 ---
 
@@ -127,7 +133,10 @@ CodeReview:
   preferred:
     - Codex
   fallback:
-    - Claude
+    - Claude   # обязан исполняться как independent reasoning trace: изолированный
+               # вызов, получающий только проверяемый вывод + нужные артефакты,
+               # не унаследованный ход рассуждений/предпосылки автора находки —
+               # продолжение того же диалога не засчитывается как проверка
 
 ---
 
@@ -143,6 +152,19 @@ WorldResearch:
     Capability не меняется. Меняется executor.
     Exa — семантический поиск (концептуальные запросы).
     WebSearch — точные запросы (имена, версии, конкретные URL).
+
+    Проверено 2026-07-27: в текущей среде Claude Code Exa не подключён как
+    вызываемый инструмент (ToolSearch по «exa semantic search» не находит
+    ничего, кроме WebSearch) — запись выше пока аспирационная, не
+    отражает реальный стек. WebSearch сейчас не fallback по выбору, а
+    единственный фактически доступный executor. Обновить эту заметку,
+    когда Exa (или замена) будет реально подключён.
+  mandatory_skills:
+    conditional:
+      - if: "цель — целая незнакомая профессия/роль, не точечный инструмент"
+        skill: skills/capability-creation-methodology.md
+      - if: "меняется способ решения задачи (idea-calibration.md Шаг 0)"
+        skill: skills/idea-calibration.md
 
 ---
 
@@ -176,6 +198,12 @@ CapabilityDesign:
     - Claude
   fallback:
     - Claude
+  mandatory_skills:
+    conditional:
+      - if: "цель — целая незнакомая профессия/роль, не точечный инструмент"
+        skill: skills/capability-creation-methodology.md
+      - if: "меняется способ решения задачи (idea-calibration.md Шаг 0)"
+        skill: skills/idea-calibration.md
 
 ---
 

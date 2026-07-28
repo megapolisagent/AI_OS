@@ -3,7 +3,7 @@
 Дата: 2026-06-22
 Тип: Calibration Log
 Статус: Активен
-Связанные файлы: [[fear_to_action_coach.md]]
+Связанные файлы: "[[fear_to_action_coach.md]]"
 ---
 
 # FEAR_TO_ACTION_COACH — Calibration Log

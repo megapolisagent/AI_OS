@@ -1,10 +1,14 @@
 ---
+aliases:
+  - "Коуч «Страх → Действие»"
 Версия: 1.0
 Дата: 2026-06-22
+Проект: нет — кросс-направленческий агент, не привязан к одному Направлению
+Skills: нет
 Тип: Agent Specification
 Подтип: Project Agent
 Статус: Активна
-Связанные файлы: [[maria_coaching_brief.md]] | [[fear_to_action_coach_log.md]] | [[../archive/wheel_of_life_baseline.md]]
+Связанные файлы: "[[maria_coaching_brief.md]] | [[fear_to_action_coach_log.md]] | [[../archive/wheel_of_life_baseline.md]]"
 ---
 
 # FEAR_TO_ACTION_COACH
